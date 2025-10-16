@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DateMate – Your AI Date Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">DateMate</div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#experience">Experience</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#cta">Get notified</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <span class="tag">AI Date Planning Companion</span>
+          <h1>Plan unforgettable dates in seconds—without leaving ChatGPT.</h1>
+          <p>
+            DateMate turns your vibe, budget, and timing into curated itineraries with local gems,
+            real-time availability, and effortless booking links—all inside a friendly conversation.
+          </p>
+          <form class="waitlist" id="waitlist-form">
+            <label for="email" class="sr-only">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <button type="submit">Join the waitlist</button>
+          </form>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </div>
+        <div class="hero__card" aria-label="Sample DateMate itinerary">
+          <div class="card__header">Friday Night Glow-Up</div>
+          <div class="card__body">
+            <div class="card__section">
+              <span class="card__time">6:30p</span>
+              <div>
+                <h3>Golden Hour Spritzes</h3>
+                <p>Skyline lounge with sunset views &amp; live DJ.</p>
+                <a href="#">Open Maps</a>
+              </div>
+            </div>
+            <div class="card__section">
+              <span class="card__time">7:45p</span>
+              <div>
+                <h3>Chef's Garden Tasting</h3>
+                <p>Seasonal tasting menu with vegetarian pairings.</p>
+                <a href="#">Reserve a table</a>
+              </div>
+            </div>
+            <div class="card__section">
+              <span class="card__time">9:30p</span>
+              <div>
+                <h3>Moonlit Kayak</h3>
+                <p>Guided paddles under city lights.</p>
+                <a href="#">Grab tickets</a>
+              </div>
+            </div>
+          </div>
+          <div class="card__footer">
+            <button class="swap-btn">Swap a stop</button>
+            <button class="share-btn">Share plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <h2>What DateMate handles for you</h2>
+        <div class="feature-grid">
+          <article>
+            <h3>Conversational planning</h3>
+            <p>
+              Chat naturally about timing, vibes, and budget. DateMate remembers your answers
+              and keeps the convo flowing without endless forms.
+            </p>
+          </article>
+          <article>
+            <h3>Curated local gems</h3>
+            <p>
+              Blends trusted APIs and insider picks to surface reservations, activities, and events that match your energy.
+            </p>
+          </article>
+          <article>
+            <h3>Ready-to-go itineraries</h3>
+            <p>
+              Get three polished date paths with timing, travel buffers, and actionable booking links in under a minute.
+            </p>
+          </article>
+          <article>
+            <h3>Smart swaps &amp; backups</h3>
+            <p>
+              Swap a stop, adjust time windows, or reroute around weather—all while DateMate keeps everything aligned.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="container experience__content">
+        <div>
+          <h2>Built for the flow of conversation</h2>
+          <p>
+            DateMate lives where you already chat. Start with “Plan a cozy anniversary night this Saturday” and
+            watch as the assistant clarifies key details, offers curated options, and assembles a shareable itinerary.
+          </p>
+          <ul class="experience__list">
+            <li><span>01</span> Kickoff: understand timing, location, and occasion.</li>
+            <li><span>02</span> Preference probe: vibe, dietary needs, transit, budget.</li>
+            <li><span>03</span> Plan reveal: compare three cards with ratings &amp; travel time.</li>
+            <li><span>04</span> Itinerary polish: swap stops, add backups, export.</li>
+          </ul>
+        </div>
+        <div class="experience__panel">
+          <h3>Upcoming milestones</h3>
+          <ul>
+            <li><strong>Week 1</strong> Conversation spec, data model, seed venues.</li>
+            <li><strong>Week 2</strong> Ranking engine, itinerary composer, booking links.</li>
+            <li><strong>Week 3</strong> Weather guardrails, calendar export, polish.</li>
+            <li><strong>Week 4</strong> QA, content curation, launch prep.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <h2>How it works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step__number">1</div>
+            <h3>Share your plans</h3>
+            <p>Tell DateMate when and where you want to go out, plus any must-haves or deal-breakers.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">2</div>
+            <h3>Choose your vibe</h3>
+            <p>Review three tailored itineraries including restaurants, events, and travel time.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">3</div>
+            <h3>Book &amp; share</h3>
+            <p>Tap into OpenTable, Eventbrite, or Google Maps links to lock plans and share a polished schedule.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container testimonials__grid">
+        <article>
+          <p>“DateMate turned our last-minute Friday into a curated adventure. We booked everything in minutes.”</p>
+          <span>— Priya &amp; Jordan</span>
+        </article>
+        <article>
+          <p>“Loved how it suggested indoor alternatives when storms rolled in. Felt like a concierge in my pocket.”</p>
+          <span>— Alex (beta tester)</span>
+        </article>
+        <article>
+          <p>“The shareable itinerary made it so easy to coordinate. We’re already planning date two.”</p>
+          <span>— Dani</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta" id="cta">
+      <div class="container cta__content">
+        <h2>Be first on the guest list</h2>
+        <p>
+          We’re opening DateMate soon. Join the waitlist for early access, launch updates, and a personal welcome plan.
+        </p>
+        <form class="waitlist waitlist--dark" id="waitlist-form-footer">
+          <label for="email-footer" class="sr-only">Email address</label>
+          <input type="email" id="email-footer" name="email" placeholder="you@example.com" required />
+          <button type="submit">Join the waitlist</button>
+        </form>
+        <p class="form-message" id="form-message-footer" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <div>
+        <div class="logo">DateMate</div>
+        <p>Crafting memorable nights out—one conversation at a time.</p>
+      </div>
+      <div class="footer__links">
+        <a href="mailto:hello@date-mate.ai">Contact</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+    <p class="footer__legal">© <span id="year"></span> DateMate. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
